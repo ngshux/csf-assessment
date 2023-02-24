@@ -1,1 +1,24 @@
-<p>restaurant-details works!</p>
+<form [formGroup]="form" (ngSubmit)="postComment()">
+<div><table>
+    <tr>
+        <td>Name: {{restaurant.name}}</td>
+    </tr><tr>
+        <td>Cuisine: {{restaurant.cuisine}}</td>
+    </tr><tr>
+        <td>Address: {{restaurant.address}}</td>
+    </tr><tr>
+        <td><app-picture [imageURL]="img"></app-picture></td>
+    </tr><tr>
+        <td>Comment</td>
+    </tr><tr>
+        <td>Name: <input type="text" formControlName="name"></td>
+    </tr><tr>
+        <td>Rating: <input type="number" min="0" max="10" formControlName="rating"></td>
+    </tr><tr>
+        <td><textarea cols="30" rows="10" formControlName="comment"></textarea></td>
+    </tr>
+    <tr>
+        <td><button type="submit">Submit</button></td>
+    </tr>
+</table>
+</div></form>
