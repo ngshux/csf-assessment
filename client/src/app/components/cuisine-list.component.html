@@ -1,0 +1,6 @@
+<h3>List of Cuisines</h3>
+<table class ="cuisine-list">
+    <tr [routerLink]="['/restaurants', c]" *ngFor = "let c of cuisines">
+        <td>{{c}}</td>
+    </tr>
+</table>
