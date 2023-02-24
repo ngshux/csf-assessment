@@ -25,7 +25,7 @@ const appRoutes: Routes = [
     BrowserModule
     HttpClientModule,
     RouterModule.forRoot(appRoutes, {onSameUrlNavigation: 'reload'}),
-    ReactiveFormModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
